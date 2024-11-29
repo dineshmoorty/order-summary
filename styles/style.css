@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.order-summary{
+  background-color: white;
+  width: 320px;
+  height: 500px;
+  border-radius: 16px;
+  box-shadow: 2px 2px  12px 2px rgba(0, 0, 0, 0.1);
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+h3{
+  padding-top: 1.3em;
+  text-align: center;
+}
+.summary{
+  margin-top: 1em;
+  text-align: center;
+  font-size: 13px;
+  color: hsl(224, 23%, 55%);
+}
+
+.payment-details{  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  width: 290px;
+  border-radius: 6px;
+  background-color: hsl(225, 100%, 98%);
+  margin-top: 1.5em;
+  margin-left: 0.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.plan{
+  font-size: 16px;
+  font-weight: 500;
+}
+.cost{
+  color: hsl(224, 23%, 55%);
+  font-size: 13px;
+}
+a{
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+a:active{
+  color:hsl(224, 23%, 55%);
+}
+.order{
+  margin-top: 1.6em;
+  text-align: center;
+}
+.payment{
+  padding: 1em 4.8em;
+  border-radius: 12px;
+  border: none;
+  background-color:hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.payment:active{
+  background-color:hsl(224, 23%, 55%);
+}
+.cancel{
+  margin-top: 1em;
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.cancel:active{
+  font-weight: 600;
+  color: hsl(223, 47%, 23%);
+}
+
+footer{
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+/* media query */
+
+@media only screen and (min-width:640px) {
+  body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(108, 145, 194, 0.352)
+  }
+  .order-summary{
+    min-width: 27vw;
+  }
+  .payment-details{
+    display: flex;
+    justify-content: space-around;
+    min-width: 25vw;
+  }
+  .payment{
+    min-width: 24vw;
+  }
+}
